@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#name {
+    font-size: 30px;
+}
+
+#fname {
+    font-weight: 900;;
+}
+
+.badges {
+    width: 15%;
+    transform: scale(1.5);
+    display: flex;
+    justify-content: space-between;
+}
