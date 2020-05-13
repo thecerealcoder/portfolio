@@ -6,15 +6,21 @@
 
 #name {
     font-size: 30px;
+    color: white;
 }
 
 #fname {
-    font-weight: 900;;
+    font-weight: 500;
+}
+
+#lname {
+    font-weight: 300;
 }
 
 .badges {
-    width: 15%;
+    color: white;
+    width: 22%;
     transform: scale(1.5);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }

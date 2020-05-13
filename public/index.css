@@ -1,5 +1,12 @@
 body{
-    margin: 2% 25%;
+    display: flex;
+    justify-content: center;
     background: rgb(244, 213, 61);
-    color: white;
+    color: lightslategray;
+    font-family: 'Jost', sans-serif;
+}
+
+#root {
+    margin: 2% 0%;
+    width: 50%;
 }

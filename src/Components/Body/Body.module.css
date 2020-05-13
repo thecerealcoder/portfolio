@@ -4,20 +4,20 @@
 }
 
 #blurb {
-    margin-top: 5%;
-    width: 33%
-}
-
-#title{
-    font-size: 20px;
+    width: 320px;
+    margin-top: 3%;
 }
 
 #mission {
     font-size: 14px;
+    opacity: .65;
 }
 
-#title span {
-    color: lightslategrey;
-    font-size: 12px;
-    font-style: italic;
+.work {
+    margin-top: 8%;
+}
+
+video{
+    width: 80%;
+    padding-right: 30px;
 }

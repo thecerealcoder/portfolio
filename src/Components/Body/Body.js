@@ -1,19 +1,21 @@
 import React from 'react';
 import styles from './Body.module.css';
+import Dragger from 'react-physics-dragger';
 
 function Body() {
+
     return(
-        <div className={styles.container}>
+        <div>
             <div id={styles.blurb}>
-                <p id={styles.title}>
-                    Software Engineer
-                    &nbsp;
-                    <span>noun</span>
-                </p>
                 <p id={styles.mission}>
-                    : continuously looking for opportunites to collaborate with others and learning new ways to program my creativity into actuality.
+                    : software engineer continuously looking for opportunites to collaborate with others and learn new ways to program my creativity into actuality
                 </p>
             </div>
+            <Dragger className={styles.work}>
+                <video src="/demos/covid.mp4" autoPlay loop></video>
+                <video src="/demos/brewguru.mp4" autoPlay loop></video>
+                <video src="/demos/weather.mp4" autoPlay loop></video>
+            </Dragger>
         </div>
     )
 };
