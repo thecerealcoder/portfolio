@@ -4,20 +4,33 @@
 }
 
 #blurb {
-    width: 320px;
+    width: 360px;
     margin-top: 3%;
 }
 
 #mission {
-    font-size: 14px;
+    font-size: 16px;
+    color: white;
     opacity: .65;
 }
 
-.work {
-    margin-top: 8%;
+hr{
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid white;
+    margin: 1em 0; 
+    padding: 0;
+}
+
+hr:first-of-type{
+    margin-top: 5%;
 }
 
 video{
-    width: 80%;
-    padding-right: 30px;
+    width: 100%;
+    border: 1px solid rgba(119,136,153,.65);
+    border-radius: 10px;
+    cursor: pointer;
 }
+

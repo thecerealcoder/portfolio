@@ -9,10 +9,10 @@ function Header() {
                 <span id={styles.lname}>Elliott</span>
             </div>
             <div className={styles.badges}>
-                <i className="fas fa-envelope"></i>
-                <i className="fab fa-github-square"></i>
-                <i className="fab fa-linkedin-in"></i>
-                <i className="fas fa-comment"></i>
+                <i className="fas fa-envelope fa-2x"></i>
+                <i className="fab fa-github-square fa-2x"></i>
+                <i className="fab fa-linkedin-in fa-2x"></i>
+                <i className="fas fa-comment fa-2x"></i>
             </div>
         </div>
     )
