@@ -6,6 +6,9 @@
 #blurb {
     width: 360px;
     margin-top: 3%;
+    animation: SlideIn 400ms linear;
+    animation-delay: .6s;
+    animation-fill-mode: both;
 }
 
 #mission {
@@ -25,6 +28,18 @@ hr{
 
 hr:first-of-type{
     margin-top: 5%;
+    animation: SlideInLeft 500ms linear;
+    animation-delay: .4s;
+}
+
+hr:last-of-type{
+    animation: SlideInRight 500ms linear;
+    animation-delay: .4s;
+}
+
+.work {
+    animation: FadeIn 600ms linear;
+    animation-delay: .2s;
 }
 
 video{
@@ -33,4 +48,65 @@ video{
     border-radius: 10px;
     cursor: pointer;
 }
+
+
+@keyframes SlideIn { 
+    0% {
+       opacity: 0;
+       transform: translateY(-100px);
+    }
+
+    80%{
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+
+
+  @keyframes SlideInLeft { 
+    0% {
+       opacity: 0;
+       transform: translateX(-400px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  }
+
+  @keyframes SlideInRight { 
+    0% {
+       opacity: 0;
+       transform: translateX(400px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  }
+
+  @keyframes FadeIn { 
+    0% {
+       opacity: 0;
+       transform: scale(.1);
+    }
+
+    80% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+  }
+
+
+
 
