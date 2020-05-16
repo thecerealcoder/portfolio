@@ -1,6 +1,6 @@
 window.addEventListener("load", function(){
-    var open = document.getElementById("o-open"),
-        close = document.getElementById("o-close"),
+    var open = document.getElementById("open"),
+        close = document.getElementById("close"),
         over = document.getElementById("overlay");
   
     open.addEventListener("click", function(){

@@ -20,7 +20,7 @@ function App() {
     close.addEventListener("click", function(){
         over.classList.remove("show");
     });
-  });
+  },[]);
 
   return (
     <div>    

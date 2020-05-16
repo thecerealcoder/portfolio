@@ -8,6 +8,8 @@
     font-size: 48px;
     color: white;
     animation: SlideIn 400ms linear;
+    animation-fill-mode: both;
+    animation-delay: .1s;
 }
 
 #fname {
@@ -16,6 +18,9 @@
 
 #lname {
     font-weight: 300;
+}
+#fname::after:hover {
+    transform: scale(1.1);
 }
 
 .badges {
@@ -26,29 +31,43 @@
     justify-content: flex-end;
 }
 
-.badges i {
+a {
+    color: white;
+    width: 25%;
+    margin-right: 20%;
+}
+
+i {
     animation: SlideIn 400ms linear;
+    animation-fill-mode: both;
+    transition: transform .15s ease-in;
+    cursor: pointer;
 }
 
-.badges i:nth-child(1){
-    animation-delay: .2s;
+i:hover {
+    transform: translateY(-3px) scale(1.3);
+    color: rgb(115, 195, 254);
 }
 
-.badges i:nth-child(2){
+
+a:nth-child(4) {
+    margin-right: 0;
+}
+
+a:nth-child(1) i{
     animation-delay: .3s;
 }
 
-.badges i:nth-child(3){
+a:nth-child(2) i{
     animation-delay: .4s;
 }
 
-.badges i:nth-child(4){
+a:nth-child(3) i{
     animation-delay: .5s;
 }
 
-
-i {
-    margin-left: 20%;
+a:nth-child(4) i{
+    animation-delay: .6s;
 }
 
 
@@ -59,7 +78,7 @@ i {
     }
 
     80%{
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
 
     100% {
@@ -67,4 +86,11 @@ i {
         transform: translateY(0px);
     }
   }
+
+  @media (hover: hover) {
+    i:hover {
+        transform: translateY(-3px) scale(1.3);
+        color: rgb(115, 195, 254);
+    }
+}
 

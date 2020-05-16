@@ -7,7 +7,7 @@
     width: 360px;
     margin-top: 3%;
     animation: SlideIn 400ms linear;
-    animation-delay: .6s;
+    animation-delay: .5s;
     animation-fill-mode: both;
 }
 
@@ -29,26 +29,57 @@ hr{
 hr:first-of-type{
     margin-top: 5%;
     animation: SlideInLeft 500ms linear;
-    animation-delay: .4s;
+    animation-delay: .5s;
+    animation-fill-mode: both;
 }
 
 hr:last-of-type{
     animation: SlideInRight 500ms linear;
-    animation-delay: .4s;
+    animation-delay: .5s;
+    animation-fill-mode: both;
 }
 
 .work {
     animation: FadeIn 600ms linear;
-    animation-delay: .2s;
+    animation-delay: .3s;
+    animation-fill-mode: both;
 }
 
-video{
+img{
     width: 100%;
     border: 1px solid rgba(119,136,153,.65);
     border-radius: 10px;
     cursor: pointer;
 }
 
+.readMore {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: grey;
+    overflow: hidden;
+    opacity:0;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    height: 100%;
+    border-radius: 10px;
+    transition: opacity .3s ease-in;
+}
+
+.readMore:hover {
+    opacity: 1;
+}
+
+.readMore button{
+    width: 25%;
+    height: 5%;
+    margin-bottom: 10%;
+}
 
 @keyframes SlideIn { 
     0% {
@@ -57,7 +88,7 @@ video{
     }
 
     80%{
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
 
     100% {
@@ -69,8 +100,12 @@ video{
 
   @keyframes SlideInLeft { 
     0% {
-       opacity: 0;
+       opacity: .0;
        transform: translateX(-400px);
+    }
+
+    20% {
+        opacity: .4;
     }
 
     100% {
@@ -81,8 +116,12 @@ video{
 
   @keyframes SlideInRight { 
     0% {
-       opacity: 0;
+       opacity: .0;
        transform: translateX(400px);
+    }
+
+    20% {
+        opacity: .4;
     }
 
     100% {
@@ -94,11 +133,7 @@ video{
   @keyframes FadeIn { 
     0% {
        opacity: 0;
-       transform: scale(.1);
-    }
-
-    80% {
-        transform: scale(1.15);
+       transform: scale(.6);
     }
 
     100% {
