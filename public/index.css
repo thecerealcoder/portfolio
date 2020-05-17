@@ -12,6 +12,9 @@ body{
 }
 
 #overlay {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -31,8 +34,8 @@ body{
   
   #close {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 1%;
+    right: 1%;
     color: #fff;
     cursor: pointer;
     z-index: 1000;

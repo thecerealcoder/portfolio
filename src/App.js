@@ -2,8 +2,6 @@ import React, {useEffect} from 'react';
 import Header from './Components/Header/Header';
 import Body from './Components/Body/Body';
 import Footer from './Components/Footer/Footer';
-import Overlay from './Components/Overlay/Overlay';
-
 
 function App() {
 
@@ -27,7 +25,6 @@ function App() {
       <Header/>
       <Body/>
       <Footer/>
-      <Overlay/>
     </div>
   );
 }

@@ -4,10 +4,6 @@ import styles from "./Header.module.css";
 function Header() {
 
     const [animationDone, setAnimationDone] = useState({});
-    const touchEnd = {
-        transform: "translateY(0px) scale(1.0)",
-        color: "white"
-    }
     
     useEffect(()=> {
         setTimeout(() => {

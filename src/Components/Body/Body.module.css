@@ -45,8 +45,11 @@ hr:last-of-type{
     animation-fill-mode: both;
 }
 
-img{
+.imgContainer {
     width: 100%;
+}
+
+img {
     border: 1px solid rgba(119,136,153,.65);
     border-radius: 10px;
     cursor: pointer;
@@ -54,8 +57,9 @@ img{
 
 .readMore {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -64,8 +68,8 @@ img{
     background-color: grey;
     overflow: hidden;
     opacity:0;
-    width: calc(100% - 60px);
-    margin-left: 30px;
+    width: calc(100% - 240px);
+    margin-left: 120px;
     height: 100%;
     border-radius: 10px;
     transition: opacity .3s ease-in;
@@ -76,9 +80,16 @@ img{
 }
 
 .readMore button{
+    font-size: 1vw;
     width: 25%;
-    height: 5%;
+    height: 8%;
     margin-bottom: 10%;
+}
+
+.readMore h1 {
+    font-size: 4vw;
+    color: white;
+    padding-top: 5%;
 }
 
 @keyframes SlideIn { 
