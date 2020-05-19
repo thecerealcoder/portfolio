@@ -45,8 +45,26 @@ hr:last-of-type{
     animation-fill-mode: both;
 }
 
+.carouselContainer {
+    overflow-x: hidden;
+}
+
 .imgContainer {
     width: 100%;
+    opacity: 75%;
+    transition: all .15s ease-in;
+}
+
+.imgContainer:hover {
+    transform: translateY(-10px) scale(1.04);
+    opacity: 100%;
+}
+
+button { 
+    background-color: rgb(115, 129, 137) !important;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 img {
@@ -55,42 +73,6 @@ img {
     cursor: pointer;
 }
 
-.readMore {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: grey;
-    overflow: hidden;
-    opacity:0;
-    width: calc(100% - 240px);
-    margin-left: 120px;
-    height: 100%;
-    border-radius: 10px;
-    transition: opacity .3s ease-in;
-}
-
-.readMore:hover {
-    opacity: 1;
-}
-
-.readMore button{
-    font-size: 1vw;
-    width: 25%;
-    height: 8%;
-    margin-bottom: 10%;
-}
-
-.readMore h1 {
-    font-size: 4vw;
-    color: white;
-    padding-top: 5%;
-}
 
 @keyframes SlideIn { 
     0% {
