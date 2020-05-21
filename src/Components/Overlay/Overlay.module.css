@@ -17,7 +17,7 @@ video {
     height: 85%;
     background-color: rgb(115, 129, 137);
     border: 1.5px solid darkslategray;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .vidContainer{
@@ -27,6 +27,7 @@ video {
 }
 
 .details {
+    position: relative;
     height: 50%;
     display: flex;
     align-items: center;
@@ -44,4 +45,47 @@ p {
     color: white;
     width: 100%;
     opacity: .65;
+}
+
+@-moz-document url-prefix() {
+    video{
+        height: unset;
+    }
+  }  
+
+  @supports (-ms-ime-align:auto) {
+    video{
+        width: unset;
+    }
+}
+
+@media (max-width: 600px) {
+   .projectCard{
+       width: 100% !important;
+   }
+   .vidContainer{ 
+       height:40% !important;
+   }
+   .details{
+       height: 60% !important;
+   }
+  }
+
+  
+@media (max-width: 1200px) {
+    .projectCard{
+        width: 80%;
+    }
+    .vidContainer{ 
+        height:50%;
+    }
+    .details{
+        height: 50%;
+    }
+   }
+
+@media (min-width: 2000px) {
+    .projectCard {
+        width: 35%;
+    }
 }

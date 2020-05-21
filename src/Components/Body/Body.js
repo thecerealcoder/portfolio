@@ -46,13 +46,13 @@ function Body() {
             <div className={styles.carouselContainer}>
                 <Carousel infiniteLoop interval={4500} showStatus={false} showThumbs={false} className={styles.work}>
                     <button value="covid" className={`${styles.imgContainer} open`} onClick={ev => handleClick(ev)}>
-                        <img src="demos/screen.png"></img>
+                        <img src="demos/covid.png" alt=""></img>
                     </button>
                     <button value="brewguru" className={`${styles.imgContainer} open`} onClick={ev => handleClick(ev)}>
-                        <img src="demos/screen.png"></img>
+                        <img src="demos/covid.png" alt=""></img>
                     </button>
                     <button value="weather" className={`${styles.imgContainer} open`} onClick={ev => handleClick(ev)}>
-                        <img src="demos/screen.png"></img>
+                        <img src="demos/covid.png" alt=""></img>
                     </button>
                 </Carousel>
                 <hr />

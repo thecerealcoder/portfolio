@@ -45,10 +45,6 @@ hr:last-of-type{
     animation-fill-mode: both;
 }
 
-.carouselContainer {
-    overflow-x: hidden;
-}
-
 .imgContainer {
     width: 100%;
     opacity: 75%;
@@ -73,6 +69,10 @@ img {
     cursor: pointer;
 }
 
+.carouselContainer {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
 
 @keyframes SlideIn { 
     0% {
@@ -135,6 +135,38 @@ img {
     }
   }
 
+  @media (max-width: 600px) {
+    .carouselContainer{
+        overflow-y: unset;
+        overflow-x: unset;
+    }
+    #blurb {
+        display:flex; 
+        justify-content: center;
+        margin:0 auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
 
+    #mission {
+        font-size: 14px;
+        width: 85%;
+        margin:0 auto;
+    }
 
+    .imgContainer {
+        opacity: 100%;
+    }
+  }
+
+  @media (min-width: 2000px) {
+    #blurb {
+        width: 550px;
+    }
+
+    #mission {
+        font-size: 24px;
+    }
+}
+  
 

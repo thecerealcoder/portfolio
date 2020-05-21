@@ -6,7 +6,7 @@ function Overlay({project: {name, path, description}}) {
         <div id="overlay">
             <div className={styles.projectCard}>
                 <div className={styles.vidContainer}>
-                    <video src={path} autoPlay loop muted></video>
+                    <video src={path} autoPlay loop muted playsInline></video>
                 </div>
                 <div className={styles.details}>
                     <h1>{name}</h1>
