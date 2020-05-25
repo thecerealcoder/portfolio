@@ -47,13 +47,13 @@ hr:last-of-type {
 
 .imgContainer {
   width: 100%;
-  opacity: 75%;
+  opacity: 0.75;
   transition: all 0.15s ease-in;
 }
 
 .imgContainer:hover {
   transform: translateY(-10px) scale(1.04);
-  opacity: 100%;
+  opacity: 1;
 }
 
 button {
