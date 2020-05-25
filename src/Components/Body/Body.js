@@ -12,6 +12,8 @@ function Body() {
       name: "BrewGuru",
       path: "demos/brewguru.mp4",
       tools: ["HTML5", "CSS3", "JavaScript", "React"],
+      live: "https://thecerealcoder.github.io/brewguru/",
+      source: "https://github.com/thecerealcoder/brewguru",
       description:
         "BrewGuru uses a public brewery API in unison with the Google Maps Static API to provide an intuitive interface for end users. You can filter by city, state, or name to search for a list of breweries that match your query. In addition, each brewery listing can generate a static Google Maps image of its location.",
     },
@@ -19,6 +21,8 @@ function Body() {
       name: "COVID-19 Tracker",
       path: "demos/covid.mp4",
       tools: ["HTML5", "CSS3", "JavaScript", "React", "Material-UI"],
+      live: "https://thecerealcoder.github.io/covid-19-tracker/",
+      source: "https://github.com/thecerealcoder/covid-19-tracker",
       description:
         "COVID-19 Tracker uses a coronavirus statistics API to efficiently visualize significant parameters such as cases, recoveries, and deaths for each country. In addition to this data, you can also view a timeline of daily cases and daily deaths for an easy interpretation of the historic activity of coronavirus infection rate.",
     },
@@ -26,6 +30,8 @@ function Body() {
       name: "Flowly",
       path: "demos/flowly.mp4",
       tools: ["HTML5", "CSS3", "JavaScript", "React"],
+      live: "https://thecerealcoder.github.io/flowly/",
+      source: "https://github.com/thecerealcoder/flowly",
       description:
         "Flowly uses the OpenWeather API to gather weather location data and displays it. Just enter your location and receive not only real-time weather data such as temperature, wind, and weather condition, but also a weekly weather forecast that is visualized along a dynamic linear gradient background.",
     },
@@ -33,6 +39,8 @@ function Body() {
       name: "TheCerealCoder",
       path: "demos/thecerealcoder.mp4",
       tools: ["HTML5", "CSS3", "JavaScript", "Express", "Mongoose", "Passport"],
+      live: "https://www.thecerealcoder.com/",
+      source: "https://github.com/thecerealcoder/thecerealcoder",
       description:
         "TheCerealCoder is a platform where I document my journey as a programmer and share the material I learn along the way. The blog site was created with HTML5, CSS3, and JavaScript. I used the Express framework to create the blueprint of routes and mongoose to connect with MongoDB and store data such as posts, comments, and user information. With the addition of account creation, I used Passport for authentication and Express Validator for form validation.",
     },

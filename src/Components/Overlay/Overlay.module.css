@@ -39,6 +39,7 @@ video {
 
 h1 {
   margin-bottom: 0px;
+  margin-top: 1%;
   color: white;
 }
 
@@ -47,6 +48,44 @@ p {
   color: white;
   width: 100%;
   opacity: 0.65;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+}
+
+.links .live {
+  background: #00b8ff;
+}
+
+.links .source {
+  background: #ffbb74;
+}
+
+.links a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  width: 50%;
+  font-size: 16px;
+  color: black;
+  padding: 2%;
+  outline: none;
+  text-decoration: none;
+  background: white;
+}
+a i {
+  font-size: 12px;
+  margin-left: 2%;
+  height: 45%;
+  pointer-events: none;
+}
+
+.links a:hover {
+  opacity: 50%;
 }
 
 .tools {
@@ -97,6 +136,24 @@ p {
   }
   .details {
     height: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .links a {
+    padding: 1%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .details {
+    font-size: 1.6rem;
+  }
+  .links a {
+    font-size: 1.5em;
+  }
+  .links i {
+    font-size: 1em !important;
+    height: 65%;
   }
 }
 
