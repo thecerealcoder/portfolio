@@ -1,85 +1,81 @@
 .badges {
-    display: flex;
-    position: absolute;
-    width: 60%;
-    color: white;
-    opacity: 0%;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
+  display: flex;
+  position: absolute;
+  width: 60%;
+  color: white;
+  opacity: 0%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
-.badgeContainer { 
-    display: none;
-    margin: 0;
-    width: 100%
+.badgeContainer {
+  display: none;
+  margin: 0;
+  width: 100%;
 }
 
 a {
-    color: white;
+  color: white;
 }
 
 i {
-    animation: SlideIn 400ms linear;
-    animation-fill-mode: both;
-    transition: transform .15s ease-in;
-    cursor: pointer;
+  animation: SlideIn 400ms linear;
+  animation-fill-mode: both;
+  transition: transform 0.15s ease-in;
+  cursor: pointer;
 }
 
 a:nth-child(4) {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-a:nth-child(1) i{
-    animation-delay: .3s;
+a:nth-child(1) i {
+  animation-delay: 0.3s;
 }
 
-a:nth-child(2) i{
-    animation-delay: .4s;
+a:nth-child(2) i {
+  animation-delay: 0.4s;
 }
 
-a:nth-child(3) i{
-    animation-delay: .5s;
+a:nth-child(3) i {
+  animation-delay: 0.5s;
 }
 
-a:nth-child(4) i{
-    animation-delay: .6s;
+a:nth-child(4) i {
+  animation-delay: 0.6s;
 }
 
-@keyframes SlideIn { 
-    0% {
-       opacity: 0;
-       transform: translateY(100px);
-    }
-
-    80%{
-        transform: translateY(-10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
   }
 
-@media (max-width: 600px) {
-    .badges {
-        position: relative;
-        opacity: 100%;
-        border: 3px solid white;
-        padding: 2% 2%;
-        border-radius: 10px;
-        background: rgba(0,0,0,.4);
-    }
-    .badgeContainer{ 
-        display:block;
-        position: absolute;
-        bottom: 2%;
-        left: 0px;
-    }
+  80% {
+    transform: translateY(-10px);
+  }
 
-    a {
-        width: unset;
-        margin-right: 0px;
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 600px) {
+  .badges {
+    position: relative;
+    opacity: 100%;
+  }
+  .badgeContainer {
+    display: block;
+    position: absolute;
+    bottom: 4%;
+    left: 0px;
+  }
+
+  a {
+    width: unset;
+    margin-right: 0px;
+  }
 }

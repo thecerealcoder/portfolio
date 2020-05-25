@@ -1,172 +1,178 @@
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #blurb {
-    width: 360px;
-    margin-top: 3%;
-    animation: SlideIn 400ms linear;
-    animation-delay: .5s;
-    animation-fill-mode: both;
+  width: 360px;
+  margin-top: 3%;
+  animation: SlideIn 400ms linear;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
 }
 
 #mission {
-    font-size: 16px;
-    color: white;
-    opacity: .65;
+  font-size: 16px;
+  color: white;
+  opacity: 0.65;
 }
 
-hr{
-    display: block; 
-    height: 1px;
-    border: 0; 
-    border-top: 1px solid white;
-    margin: 1em 0; 
-    padding: 0;
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid white;
+  margin: 1em 0;
+  padding: 0;
 }
 
-hr:first-of-type{
-    margin-top: 5%;
-    animation: SlideInLeft 500ms linear;
-    animation-delay: .5s;
-    animation-fill-mode: both;
+hr:first-of-type {
+  margin-top: 5%;
+  animation: SlideInLeft 500ms linear;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
 }
 
-hr:last-of-type{
-    animation: SlideInRight 500ms linear;
-    animation-delay: .5s;
-    animation-fill-mode: both;
+hr:last-of-type {
+  animation: SlideInRight 500ms linear;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
 }
 
 .work {
-    animation: FadeIn 600ms linear;
-    animation-delay: .3s;
-    animation-fill-mode: both;
+  animation: FadeIn 600ms linear;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
 }
 
 .imgContainer {
-    width: 100%;
-    opacity: 75%;
-    transition: all .15s ease-in;
+  width: 100%;
+  opacity: 75%;
+  transition: all 0.15s ease-in;
 }
 
 .imgContainer:hover {
-    transform: translateY(-10px) scale(1.04);
-    opacity: 100%;
+  transform: translateY(-10px) scale(1.04);
+  opacity: 100%;
 }
 
-button { 
-    background-color: rgb(115, 129, 137) !important;
-    border: none;
-    outline: none;
-    cursor: pointer;
+button {
+  background-color: rgb(115, 129, 137) !important;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 img {
-    border: 1px solid rgba(119,136,153,.65);
-    border-radius: 10px;
-    cursor: pointer;
+  border: 1px solid rgba(119, 136, 153, 0.65);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .carouselContainer {
-    overflow-x: hidden;
-    overflow-y: visible;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
-@keyframes SlideIn { 
-    0% {
-       opacity: 0;
-       transform: translateY(-100px);
-    }
-
-    80%{
-        transform: translateY(10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
   }
 
-
-  @keyframes SlideInLeft { 
-    0% {
-       opacity: .0;
-       transform: translateX(-400px);
-    }
-
-    20% {
-        opacity: .4;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  80% {
+    transform: translateY(10px);
   }
 
-  @keyframes SlideInRight { 
-    0% {
-       opacity: .0;
-       transform: translateX(400px);
-    }
-
-    20% {
-        opacity: .4;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
-
-  @keyframes FadeIn { 
-    0% {
-       opacity: 0;
-       transform: scale(.6);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1.0);
-    }
-  }
-
-  @media (max-width: 600px) {
-    .carouselContainer{
-        overflow-y: unset;
-        overflow-x: unset;
-    }
-    #blurb {
-        display:flex; 
-        justify-content: center;
-        margin:0 auto;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-    #mission {
-        font-size: 14px;
-        width: 85%;
-        margin:0 auto;
-    }
-
-    .imgContainer {
-        opacity: 100%;
-    }
-  }
-
-  @media (min-width: 2000px) {
-    #blurb {
-        width: 550px;
-    }
-
-    #mission {
-        font-size: 24px;
-    }
 }
-  
 
+@keyframes SlideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+
+  20% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes SlideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+
+  20% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 350px) {
+  #blurb {
+    width: 300px;
+  }
+  #mission {
+    width: 100%;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+  .carouselContainer {
+    overflow-y: unset;
+    overflow-x: unset;
+  }
+  #blurb {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #mission {
+    font-size: 14px;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .imgContainer {
+    opacity: 100%;
+  }
+}
+
+@media (min-width: 2000px) {
+  #blurb {
+    width: 550px;
+  }
+
+  #mission {
+    font-size: 24px;
+  }
+}
