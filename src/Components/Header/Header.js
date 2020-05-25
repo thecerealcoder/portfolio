@@ -17,7 +17,7 @@ function Header() {
         &nbsp;
         <span id={styles.lname}>Elliott</span>
       </div>
-      <div className={styles.badges}>
+      <div id="navBadge" className={styles.badges}>
         <a href="mailto:thecerealcoder@gmail.com?subject:Contact Inquiry">
           <i style={animationDone} className="fas fa-envelope fa-2x"></i>
         </a>
