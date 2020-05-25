@@ -104,7 +104,7 @@ body {
 /* React Responsive Carousel Styling */
 
 .selected {
-  opacity: 100 !important;
+  opacity: 1 !important;
 }
 .carousel .control-prev.control-arrow:before {
   border-right: 8px solid black !important;

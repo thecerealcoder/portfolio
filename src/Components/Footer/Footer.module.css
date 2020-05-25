@@ -3,7 +3,7 @@
   position: absolute;
   width: 60%;
   color: white;
-  opacity: 0%;
+  opacity: 0;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
@@ -65,7 +65,7 @@ a:nth-child(4) i {
 @media (max-width: 600px) {
   .badges {
     position: relative;
-    opacity: 100%;
+    opacity: 1;
   }
   .badgeContainer {
     display: block;

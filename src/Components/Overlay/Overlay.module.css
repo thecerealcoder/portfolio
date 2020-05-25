@@ -85,7 +85,7 @@ a i {
 }
 
 .links a:hover {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .tools {
@@ -154,6 +154,12 @@ a i {
   .links i {
     font-size: 1em !important;
     height: 65%;
+  }
+  .tools {
+    margin: 0;
+  }
+  p {
+    margin-top: 2%;
   }
 }
 
