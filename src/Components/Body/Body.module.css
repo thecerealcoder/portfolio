@@ -51,11 +51,6 @@ hr:last-of-type {
   transition: all 0.15s ease-in;
 }
 
-.imgContainer:hover {
-  transform: translateY(-10px) scale(1.04);
-  opacity: 1;
-}
-
 button {
   background-color: rgb(115, 129, 137) !important;
   border: none;
@@ -134,12 +129,22 @@ img {
   }
 }
 
+@media (hover: hover) {
+  .imgContainer:hover {
+    transform: translateY(-10px) scale(1.04);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 350px) {
   #blurb {
     width: 300px;
   }
   #mission {
     width: 100%;
+  }
+  .imgContainer {
+    opacity: 1;
   }
 }
 

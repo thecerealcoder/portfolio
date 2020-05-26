@@ -128,10 +128,6 @@ body {
   font-size: 18px;
 }
 
-.carousel.carousel-slider .control-arrow:hover {
-  background: rgba(0, 0, 0, 0.2) !important;
-}
-
 .carousel .slider-wrapper {
   overflow: unset !important;
 }
@@ -179,16 +175,28 @@ body {
   margin: 0 8px;
 }
 
+@media (hover: hover) {
+  .carousel.carousel-slider .control-arrow:hover {
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
 @media (max-width: 400px) {
   .carousel .slide {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .carousel.carousel-slider .control-arrow:active {
+    background: rgba(0, 0, 0, 0.2) !important;
   }
 }
 @media (min-width: 400px) and (max-width: 600px) {
   .carousel .slide {
     padding-left: 100px;
     padding-right: 100px;
+  }
+  .carousel.carousel-slider .control-arrow:active {
+    background: rgba(0, 0, 0, 0.2) !important;
   }
 }
 @media (min-width: 1800px) {
