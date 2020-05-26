@@ -11,10 +11,20 @@ function Overlay({
           <video src={path} autoPlay loop muted playsInline></video>
         </div>
         <div className={styles.links}>
-          <a className={(styles.link, styles.live)} href={live}>
+          <a
+            className={(styles.link, styles.live)}
+            href={live}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Live <i className="fas fa-external-link-square-alt"></i>
           </a>
-          <a className={(styles.link, styles.source)} href={source}>
+          <a
+            className={(styles.link, styles.source)}
+            href={source}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Source <i className="fas fa-code"></i>
           </a>
         </div>

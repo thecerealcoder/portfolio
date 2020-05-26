@@ -15,7 +15,7 @@ function Body() {
       live: "https://thecerealcoder.github.io/brewguru/",
       source: "https://github.com/thecerealcoder/brewguru",
       description:
-        "BrewGuru uses a public brewery API in unison with the Google Maps Static API to provide an intuitive interface for end users. You can filter by city, state, or name to search for a list of breweries that match your query. In addition, each brewery listing can generate a static Google Maps image of its location.",
+        "BrewGuru uses a public brewery API in unison with the Google JavaScript Maps API to provide an intuitive interface for end users. You can filter by city, state, or name to search for a list of breweries that match your query. In addition, each brewery listing can generate an interactive map for simplistic location access.",
     },
     covid: {
       name: "COVID-19 Tracker",
